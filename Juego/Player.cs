@@ -8,6 +8,6 @@ namespace Juego
 {
     public class Player
     {
-      
+        int v;
     }
 }
