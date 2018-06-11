@@ -1,0 +1,10 @@
+C:\Users\Espiraculo\Documents\Programas\Programas\Juego\Juego\bin\Debug\Juego.exe.config
+C:\Users\Espiraculo\Documents\Programas\Programas\Juego\Juego\bin\Debug\Juego.exe
+C:\Users\Espiraculo\Documents\Programas\Programas\Juego\Juego\bin\Debug\Juego.pdb
+C:\Users\Espiraculo\Documents\Programas\Programas\Juego\Juego\obj\Debug\Juego.csprojResolveAssemblyReference.cache
+C:\Users\Espiraculo\Documents\Programas\Programas\Juego\Juego\obj\Debug\Juego.Form1.resources
+C:\Users\Espiraculo\Documents\Programas\Programas\Juego\Juego\obj\Debug\Juego.Properties.Resources.resources
+C:\Users\Espiraculo\Documents\Programas\Programas\Juego\Juego\obj\Debug\Juego.csproj.GenerateResource.Cache
+C:\Users\Espiraculo\Documents\Programas\Programas\Juego\Juego\obj\Debug\Juego.csproj.CoreCompileInputs.cache
+C:\Users\Espiraculo\Documents\Programas\Programas\Juego\Juego\obj\Debug\Juego.exe
+C:\Users\Espiraculo\Documents\Programas\Programas\Juego\Juego\obj\Debug\Juego.pdb
