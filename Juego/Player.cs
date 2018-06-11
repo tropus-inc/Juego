@@ -11,10 +11,12 @@ namespace Juego
         string name;
         List<Character> characters = new List<Character>();
 
+        public List<Character> Characters { get => characters; set => characters = value; }
+        public string Name { get => name; set => name = value; }
+
         public Player(string name)
         {
             this.name = name;
         }
-
     }
 }
