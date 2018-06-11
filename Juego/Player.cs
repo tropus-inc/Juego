@@ -8,6 +8,13 @@ namespace Juego
 {
     public class Player
     {
-        int v;
+        string name;
+        List<Character> characters = new List<Character>();
+
+        public Player(string name)
+        {
+            this.name = name;
+        }
+
     }
 }
