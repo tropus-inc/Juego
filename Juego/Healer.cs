@@ -8,6 +8,7 @@ namespace Juego
 {
     public class Healer : Character
     {
+        int f; 
         public new float Damage { get => base.Damage / 10; }
         public new float Heal { get => base.Damage; }
         public new float Hp { get => base.Hp; }
@@ -24,10 +25,10 @@ namespace Juego
 
         public Healer()
         {
-            base.Hp = 200;
+            base.Hp = 200000000000;
             base.Life = base.Hp;
 
-            base.Mp = 250;
+            base.Mp = 2500;
             base.Mana = base.Mp;
 
             base.Exp = 0;
