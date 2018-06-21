@@ -52,5 +52,12 @@ namespace Juego
             cells = new Block[width, length];
 
         }
+
+        public static Map Load(string Name)
+        {
+            Map m = new Map();
+
+            return m;
+        }
     }
 }

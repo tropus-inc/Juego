@@ -13,7 +13,9 @@ namespace Juego
     public partial class Juego : Form
     {
         List<Player> players = new List<Player>();
-        public Juego()
+        Map mapa;
+
+        public Juego(List<Player> players)
         {
             InitializeComponent();
         }
