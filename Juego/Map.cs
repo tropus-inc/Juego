@@ -53,9 +53,9 @@ namespace Juego
 
         }
 
-        public static Map Load(string Name)
+        public static Map Load(string name)
         {
-            Map m = new Map();
+            Map m = new Map(name);
 
             return m;
         }

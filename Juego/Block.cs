@@ -10,17 +10,19 @@ namespace Juego
 {
     public class Block
     {
-        Image image;
+        string terrain, surface, obejct_;
         bool walkeable;
         bool occupied;
 
-        public Image Image { get => image; set => image = value; }
         public bool Walkeable { get => walkeable; set => walkeable = value; }
         public bool Occupied { get => occupied; set => occupied = value; }
+        public string Terrain { get => terrain; set => terrain = value; }
+        public string Surface { get => surface; set => surface = value; }
+        public string Obejct { get => obejct_; set => obejct_ = value; }
 
-        public Block(Image image)
+        public Block()
         {
-            this.image = new Bitmap(image);
+            occupied = false;
         }
     }
 }
