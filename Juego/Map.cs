@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 
 namespace Juego
 {
-    public enum MapType { Untyped};
+    public enum MapType { Untyped = 0};
 
     public class Map
     {
@@ -55,7 +56,36 @@ namespace Juego
 
         public static Map Load(string name)
         {
-            Map m = new Map(name);
+            StreamReader lector = new StreamReader(name + ".map");
+            Map m;
+            int alto, ancho;
+            string[] s = new string[4];
+
+            ancho = Convert.ToInt32(lector.ReadLine().Split(':')[1]);
+            alto = Convert.ToInt32(lector.ReadLine().Split(':')[1]);
+
+            m = new Map(name, alto, ancho, Convert.ToInt32(lector.ReadLine().Split(':')[1]));
+
+            for (int y = 0; y < alto; y++)
+            {
+                for (int x = 0; x < ancho; x++)
+                {
+                    s = lector.ReadLine().Split('/');
+
+                    m.Cells[x, y].Terrain = s[0].Split(':')[0];
+                    m.Cells[x, y].Surface = s[1];
+                    m.Cells[x, y].Obejct = s[2];
+                    
+                    if(s[3] == "0")
+                    {
+                        m.Cells[x, y].Walkeable = false;
+                    }
+                    else if (s[3] == "1")
+                    {
+                        m.Cells[x, y].Walkeable = true;
+                    }
+                }
+            }
 
             return m;
         }
